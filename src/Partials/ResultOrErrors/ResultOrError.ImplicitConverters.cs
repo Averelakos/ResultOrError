@@ -34,7 +34,7 @@ namespace ResultOrError.Partials
         /// </summary>
         public static implicit operator ResultOrError<TValue>(Error[] errors)
         {
-            if(errors is null) throw new ArgumentException(nameof(errors));
+            if(errors is null) throw new ArgumentNullException(nameof(errors));
 
             return new ResultOrError<TValue>([..errors]);
         }
