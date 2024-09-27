@@ -1,5 +1,4 @@
-﻿using ErrorOr;
-using FluentAssertions;
+﻿using FluentAssertions;
 using ResultOrError.Models;
 using ResultOrError.Partials;
 
